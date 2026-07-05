@@ -133,10 +133,12 @@
         border-radius: 28px;
         padding: 8px;
       }
+
       .arcade-inner {
         border-radius: 22px;
         border-width: 3px;
       }
+
       #gameCanvas {
         max-height: 62vh;
       }
@@ -163,12 +165,13 @@
             <h1 class="text-4xl md:text-6xl font-black leading-tight">
               Verb Velocity
             </h1>
+
             <h2 class="text-xl md:text-2xl font-bold text-yellow-200 mt-3">
               Irregular Verb Racing Adventure
             </h2>
 
             <p class="mt-5 text-white/85 text-lg">
-              Race through 3 lanes, collect the correct irregular verb form, and become the Grammar Champion!
+              Race slowly, read carefully, and collect the correct irregular verb form.
             </p>
 
             <div class="mt-7 glass rounded-3xl p-5 text-left">
@@ -176,6 +179,7 @@
                 <i class="fa-solid fa-user-pen text-yellow-300"></i>
                 Enter Your Name
               </label>
+
               <input
                 id="playerNameInput"
                 type="text"
@@ -184,6 +188,7 @@
                 placeholder="Student name"
                 autocomplete="off"
               />
+
               <p id="nameWarning" class="hidden mt-2 text-rose-200 font-bold">
                 Please enter your name before playing.
               </p>
@@ -200,6 +205,7 @@
                   <i class="fa-solid fa-circle-info"></i>
                   How to Play
                 </button>
+
                 <button data-go="libraryScreen" class="navBtn btn-game rounded-3xl bg-fuchsia-400 hover:bg-fuchsia-300 text-slate-900 font-black py-4 px-4">
                   <i class="fa-solid fa-book-open"></i>
                   Verb Classroom
@@ -237,11 +243,11 @@
 
             <div class="flex gap-4 items-start bg-white/10 rounded-3xl p-4">
               <div class="w-14 h-14 shrink-0 rounded-2xl bg-rose-300 text-slate-900 flex items-center justify-center text-3xl">
-                <i class="fa-solid fa-volume-high"></i>
+                <i class="fa-solid fa-clock"></i>
               </div>
               <div>
-                <h4 class="font-black text-xl">Voice & Sound</h4>
-                <p class="text-white/80">Correct answers are spoken aloud using Web Speech API.</p>
+                <h4 class="font-black text-xl">Slow Reading Mode</h4>
+                <p class="text-white/80">Cards fall slowly so young learners have time to read.</p>
               </div>
             </div>
 
@@ -266,6 +272,7 @@
             <i class="fa-solid fa-circle-info"></i>
             How to Play
           </h2>
+
           <button data-go="mainMenu" class="navBtn btn-game rounded-2xl bg-white text-slate-900 font-black px-5 py-3">
             <i class="fa-solid fa-house"></i>
             Menu
@@ -299,7 +306,7 @@
               Score
             </h3>
             <p class="text-lg text-white/85">
-              Correct answer: <b>+10 points</b>, speed increases, stars appear, and the verb is spoken aloud.
+              Correct answer: <b>+10 points</b>. The game gets only a little faster.
             </p>
           </div>
 
@@ -338,6 +345,7 @@
             </h2>
             <p class="text-white/80 text-lg mt-1">Review irregular verbs before racing.</p>
           </div>
+
           <button data-go="mainMenu" class="navBtn btn-game rounded-2xl bg-white text-slate-900 font-black px-5 py-3">
             <i class="fa-solid fa-house"></i>
             Menu
@@ -348,12 +356,15 @@
           <button class="soundVerbBtn bg-lime-300 text-slate-900 rounded-3xl p-4 font-black text-xl btn-game" data-say="Base Verb, Past Simple, Past Participle">
             V1 / V2 / V3
           </button>
+
           <button class="soundVerbBtn bg-sky-300 text-slate-900 rounded-3xl p-4 font-black text-xl btn-game" data-say="go, went, gone">
             go / went / gone
           </button>
+
           <button class="soundVerbBtn bg-pink-300 text-slate-900 rounded-3xl p-4 font-black text-xl btn-game" data-say="eat, ate, eaten">
             eat / ate / eaten
           </button>
+
           <button class="soundVerbBtn bg-yellow-300 text-slate-900 rounded-3xl p-4 font-black text-xl btn-game" data-say="write, wrote, written">
             write / wrote / written
           </button>
@@ -412,10 +423,12 @@
               <i class="fa-solid fa-arrow-left"></i>
               Left
             </button>
+
             <button id="centerBtn" class="btn-game rounded-2xl bg-yellow-300 text-slate-900 font-black text-xl py-3">
               <i class="fa-solid fa-road"></i>
               Center
             </button>
+
             <button id="rightBtn" class="btn-game rounded-2xl bg-sky-400 text-slate-900 font-black text-xl py-3">
               Right
               <i class="fa-solid fa-arrow-right"></i>
@@ -427,13 +440,16 @@
               <div class="text-7xl mb-3 text-yellow-300">
                 <i class="fa-solid fa-pause"></i>
               </div>
+
               <h2 class="text-5xl font-black mb-3">Paused</h2>
               <p class="text-white/80 text-lg mb-6">Take a breath, then keep racing!</p>
+
               <div class="grid gap-4">
                 <button id="resumeBtn" class="btn-game rounded-3xl bg-lime-400 text-slate-900 font-black text-2xl py-4">
                   <i class="fa-solid fa-play"></i>
                   Resume
                 </button>
+
                 <button id="quitBtn" class="btn-game rounded-3xl bg-white text-slate-900 font-black text-xl py-4">
                   <i class="fa-solid fa-house"></i>
                   Main Menu
@@ -447,6 +463,7 @@
               <div class="text-7xl mb-3 text-rose-300">
                 <i class="fa-solid fa-flag-checkered"></i>
               </div>
+
               <h2 class="text-5xl font-black mb-2">Game Over</h2>
               <p id="gameOverName" class="text-xl text-yellow-200 font-bold mb-4">Player</p>
 
@@ -455,6 +472,7 @@
                   <p class="text-white/70 font-bold">Score</p>
                   <p id="finalScore" class="text-4xl font-black text-lime-200">0</p>
                 </div>
+
                 <div class="bg-white/10 rounded-3xl p-4">
                   <p class="text-white/70 font-bold">High Score</p>
                   <p id="highScoreText" class="text-4xl font-black text-yellow-200">0</p>
@@ -471,6 +489,7 @@
                   <i class="fa-solid fa-rotate-right"></i>
                   Play Again
                 </button>
+
                 <button id="gameOverMenuBtn" class="btn-game rounded-3xl bg-white text-slate-900 font-black text-xl py-4">
                   <i class="fa-solid fa-house"></i>
                   Main Menu
@@ -557,16 +576,23 @@
     let gameRunning = false;
     let paused = false;
     let playerName = "";
+
     let score = 0;
-    let hearts = 5;
-    let speed = 7.0;
+    let hearts = 3;
+
+    let speed = 1.0;
+    let maxSpeed = 2.4;
+    let speedIncrease = 0.03;
+
     let roadScroll = 0;
     let spawnTimer = 0;
-    let spawnInterval = 2500;
+    let spawnInterval = 3500;
+
     let lastTime = 0;
     let playerLane = 1;
     let playerX = 240;
     let targetPlayerX = 240;
+
     let shakeTime = 0;
     let shakePower = 0;
     let currentMission = null;
@@ -594,6 +620,7 @@
       if (!audioCtx) {
         audioCtx = new (window.AudioContext || window.webkitAudioContext)();
       }
+
       if (audioCtx.state === "suspended") {
         audioCtx.resume();
       }
@@ -638,12 +665,13 @@
 
     function speak(text) {
       if (!("speechSynthesis" in window)) return;
+
       window.speechSynthesis.cancel();
 
       const utter = new SpeechSynthesisUtterance(text);
       utter.lang = "en-US";
-      utter.rate = 0.82;
-      utter.pitch = 1.12;
+      utter.rate = 0.78;
+      utter.pitch = 1.1;
       utter.volume = 1;
 
       window.speechSynthesis.speak(utter);
@@ -655,25 +683,30 @@
 
     function shuffle(arr) {
       const copy = [...arr];
+
       for (let i = copy.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
         [copy[i], copy[j]] = [copy[j], copy[i]];
       }
+
       return copy;
     }
 
     function getAllForms() {
       const set = new Set();
+
       irregularVerbs.forEach(v => {
         set.add(v.base);
         set.add(v.v2);
         set.add(v.v3);
       });
+
       return [...set];
     }
 
     function createMission() {
       const verb = randomItem(irregularVerbs);
+
       const missionTypes = [
         "v2OfBase",
         "v3OfBase",
@@ -684,6 +717,7 @@
       ];
 
       const type = randomItem(missionTypes);
+
       let prompt = "";
       let answer = "";
       let speakText = "";
@@ -715,7 +749,7 @@
       if (type === "meaningToBase") {
         prompt = `Collect the verb meaning: "${verb.meaning}"`;
         answer = verb.base;
-        speakText = `${verb.base}, ${verb.v2}, ${verb.v3}. It means ${verb.meaning}.`;
+        speakText = `${verb.base}, ${verb.v2}, ${verb.v3}`;
       }
 
       if (type === "completeTriplet") {
@@ -736,10 +770,12 @@
     function makeDistractors(answer) {
       const pool = getAllForms().filter(word => word !== answer);
       const unique = [];
+
       while (unique.length < 2) {
         const word = randomItem(pool);
         if (!unique.includes(word)) unique.push(word);
       }
+
       return unique;
     }
 
@@ -748,6 +784,7 @@
       const roadX = 44;
       const roadW = w - 88;
       const laneW = roadW / 3;
+
       return [
         roadX + laneW * 0.5,
         roadX + laneW * 1.5,
@@ -784,9 +821,13 @@
       hudScore.textContent = score;
 
       hudHearts.innerHTML = "";
+
       for (let i = 0; i < 3; i++) {
         const heart = document.createElement("i");
-        heart.className = i < hearts ? "fa-solid fa-heart heart" : "fa-regular fa-heart heart opacity-30";
+        heart.className = i < hearts
+          ? "fa-solid fa-heart heart"
+          : "fa-regular fa-heart heart opacity-30";
+
         hudHearts.appendChild(heart);
       }
     }
@@ -797,14 +838,20 @@
 
       score = 0;
       hearts = 3;
-      speed = 3.0;
+
+      speed = 1.0;
+      maxSpeed = 2.4;
+      speedIncrease = 0.03;
+
       roadScroll = 0;
       spawnTimer = 0;
-      spawnInterval = 1200;
+      spawnInterval = 3500;
+
       lastTime = performance.now();
       playerLane = 1;
       playerX = laneCenters()[1];
       targetPlayerX = playerX;
+
       shakeTime = 0;
       shakePower = 0;
       currentMission = null;
@@ -812,22 +859,30 @@
       particles = [];
       explosions = [];
       raceDistance = 0;
+
       paused = false;
       gameRunning = true;
 
       pauseScreen.classList.add("hidden");
       pauseScreen.classList.remove("flex");
+
       gameOverScreen.classList.add("hidden");
       gameOverScreen.classList.remove("flex");
 
       updateHud();
-      spawnItemGroup();
+
+      setTimeout(() => {
+        if (gameRunning && !paused && itemGroups.length === 0) {
+          spawnItemGroup();
+        }
+      }, 800);
     }
 
     function startGame() {
       initAudio();
 
       const name = playerNameInput.value.trim();
+
       if (!name) {
         nameWarning.classList.remove("hidden");
         playerNameInput.focus();
@@ -842,6 +897,7 @@
     }
 
     document.getElementById("startBtn").addEventListener("click", startGame);
+
     document.getElementById("playAgainBtn").addEventListener("click", () => {
       initAudio();
       resetGame();
@@ -855,6 +911,7 @@
 
     document.getElementById("pauseBtn").addEventListener("click", () => {
       if (!gameRunning) return;
+
       paused = true;
       pauseScreen.classList.remove("hidden");
       pauseScreen.classList.add("flex");
@@ -880,15 +937,19 @@
 
     function moveLane(direction) {
       if (!gameRunning || paused) return;
+
       playerLane = Math.max(0, Math.min(2, playerLane + direction));
       targetPlayerX = laneCenters()[playerLane];
+
       playClick();
     }
 
     function setLane(lane) {
       if (!gameRunning || paused) return;
+
       playerLane = Math.max(0, Math.min(2, lane));
       targetPlayerX = laneCenters()[playerLane];
+
       playClick();
     }
 
@@ -899,8 +960,10 @@
     document.addEventListener("keydown", e => {
       if (e.key === "ArrowLeft" || e.key.toLowerCase() === "a") moveLane(-1);
       if (e.key === "ArrowRight" || e.key.toLowerCase() === "d") moveLane(1);
+
       if (e.key === "Escape" && gameRunning) {
         paused = !paused;
+
         if (paused) {
           pauseScreen.classList.remove("hidden");
           pauseScreen.classList.add("flex");
@@ -955,8 +1018,10 @@
 
     function handleCorrect(item, x, y) {
       score += 10;
-      speed = Math.min(7.7, speed + 0.22);
-      spawnInterval = Math.max(760, spawnInterval - 25);
+
+      speed = Math.min(maxSpeed, speed + speedIncrease);
+      spawnInterval = 3500;
+
       playCorrect();
       createStars(x, y);
       speak(currentMission.speakText);
@@ -965,8 +1030,10 @@
 
     function handleWrong(x, y) {
       hearts -= 1;
+
       shakeTime = 420;
       shakePower = 12;
+
       playWrong();
       createExplosion(x, y);
       updateHud();
@@ -995,6 +1062,7 @@
       gameOverName.textContent = `${playerName}'s Race Result`;
       finalScore.textContent = score;
       highScoreText.textContent = high;
+
       newRecordText.classList.toggle("hidden", !newRecord);
 
       if (!newRecord && high > 0) {
@@ -1008,6 +1076,7 @@
 
     function roundRect(ctx, x, y, w, h, r) {
       const radius = Math.min(r, w / 2, h / 2);
+
       ctx.beginPath();
       ctx.moveTo(x + radius, y);
       ctx.arcTo(x + w, y, x + w, y + h, radius);
@@ -1027,13 +1096,16 @@
       sky.addColorStop(0, "#1e3a8a");
       sky.addColorStop(0.45, "#312e81");
       sky.addColorStop(1, "#0f172a");
+
       ctx.fillStyle = sky;
       ctx.fillRect(0, 0, w, h);
 
       ctx.fillStyle = "rgba(255,255,255,0.08)";
+
       for (let i = 0; i < 40; i++) {
         const sx = (i * 73 + raceDistance * 0.08) % w;
         const sy = (i * 47 + raceDistance * 0.05) % 240;
+
         ctx.beginPath();
         ctx.arc(sx, sy, i % 3 === 0 ? 2 : 1.2, 0, Math.PI * 2);
         ctx.fill();
@@ -1050,6 +1122,7 @@
 
       ctx.strokeStyle = "#facc15";
       ctx.lineWidth = 8;
+
       ctx.beginPath();
       ctx.moveTo(roadX + 35, 0);
       ctx.lineTo(12, h);
@@ -1137,8 +1210,8 @@
       const centers = laneCenters();
       const x = centers[item.lane];
       const y = groupY;
-      const cardW = 122;
-      const cardH = 68;
+      const cardW = 124;
+      const cardH = 72;
 
       ctx.save();
       ctx.translate(x, y);
@@ -1162,12 +1235,12 @@
       ctx.stroke();
 
       ctx.fillStyle = "#111827";
-      ctx.font = "900 21px Fredoka, sans-serif";
       ctx.textAlign = "center";
       ctx.textBaseline = "middle";
 
       const text = item.text.length > 12 ? item.text.replace(" / ", "/") : item.text;
-      const fontSize = text.length > 12 ? 17 : text.length > 9 ? 19 : 23;
+      const fontSize = text.length > 12 ? 17 : text.length > 9 ? 19 : 24;
+
       ctx.font = `900 ${fontSize}px Fredoka, sans-serif`;
       ctx.fillText(text, 0, 3);
 
@@ -1188,6 +1261,7 @@
         ctx.lineWidth = 2;
 
         ctx.beginPath();
+
         for (let i = 0; i < 5; i++) {
           const angle = -Math.PI / 2 + i * (Math.PI * 2 / 5);
           const outerX = p.x + Math.cos(angle) * p.size;
@@ -1198,8 +1272,10 @@
 
           if (i === 0) ctx.moveTo(outerX, outerY);
           else ctx.lineTo(outerX, outerY);
+
           ctx.lineTo(innerX, innerY);
         }
+
         ctx.closePath();
         ctx.fill();
         ctx.stroke();
@@ -1229,14 +1305,15 @@
 
     function drawSpeedHud() {
       ctx.save();
+
       ctx.fillStyle = "rgba(15,23,42,.75)";
-      roundRect(ctx, 14, 14, 130, 38, 14);
+      roundRect(ctx, 14, 14, 150, 38, 14);
       ctx.fill();
 
       ctx.fillStyle = "#e0f2fe";
       ctx.font = "800 18px Fredoka, sans-serif";
       ctx.textAlign = "left";
-      ctx.fillText(`Speed ${speed.toFixed(1)}x`, 30, 39);
+      ctx.fillText(`Slow Mode ${speed.toFixed(1)}x`, 30, 39);
 
       ctx.restore();
     }
@@ -1245,15 +1322,18 @@
       if (!gameRunning || paused) return;
 
       const deltaFactor = delta / 16.67;
+
       raceDistance += speed * deltaFactor;
-      roadScroll += speed * 2.5 * deltaFactor;
-      playerX += (targetPlayerX - playerX) * Math.min(1, 0.18 * deltaFactor);
+      roadScroll += speed * 1.8 * deltaFactor;
+
+      playerX += (targetPlayerX - playerX) * Math.min(1, 0.14 * deltaFactor);
 
       if (shakeTime > 0) {
         shakeTime -= delta;
       }
 
       spawnTimer += delta;
+
       if (spawnTimer >= spawnInterval) {
         spawnTimer = 0;
         spawnItemGroup();
@@ -1263,7 +1343,7 @@
       const centers = laneCenters();
 
       itemGroups.forEach(group => {
-        group.y += speed * 1.35 * deltaFactor;
+        group.y += speed * 0.78 * deltaFactor;
 
         if (!group.processed) {
           group.items.forEach(item => {
@@ -1390,19 +1470,25 @@
 
     function drawStartPreview() {
       drawRoad();
+
       playerX = laneCenters()[1];
       targetPlayerX = playerX;
+
       drawPlayerCar();
+
       ctx.fillStyle = "rgba(15,23,42,.78)";
-      roundRect(ctx, 46, 260, canvas.width - 92, 110, 28);
+      roundRect(ctx, 46, 260, canvas.width - 92, 120, 28);
       ctx.fill();
+
       ctx.fillStyle = "#fef08a";
       ctx.textAlign = "center";
       ctx.font = "900 28px Fredoka, sans-serif";
       ctx.fillText("Verb Velocity", canvas.width / 2, 305);
+
       ctx.fillStyle = "#e0f2fe";
       ctx.font = "800 18px Fredoka, sans-serif";
-      ctx.fillText("Collect the correct irregular verb!", canvas.width / 2, 340);
+      ctx.fillText("Slow Reading Mode", canvas.width / 2, 340);
+      ctx.fillText("Read carefully before choosing!", canvas.width / 2, 365);
     }
 
     drawStartPreview();
